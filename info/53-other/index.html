@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Other changes</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="">
+        <meta name="title" content="Other changes">
+        <meta name="description" content="">
+
+        <meta property="og:title" content="Other changes">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:title" content="Other changes">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+
+        <link rel="stylesheet" href="/php-changes-reference/info.css" type="text/css" media="screen">
+    </head>
+
+    <body>
+        
+<header class="main-header">
+    <h1>
+        Other changes for PHP 5.3
+    </h1>
+</header>
+
+<main class="info-main">
+  <div id="migration53.other" class="section">
+  <h2 class="title">Other changes</h2>
+  <ul class="itemizedlist"><li class="listitem">
+    <span class="simpara">
+     <span class="function"><a href="https://www.php.net/manual/en/splfileinfo.getpathinfo.php" class="function">SplFileInfo::getpathinfo()</a></span> now returns information about 
+     the path name.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     <a href="https://www.php.net/manual/en/class.splobjectstorage.php" class="classname">SplObjectStorage</a> now has
+     <a href="https://www.php.net/manual/en/class.arrayaccess.php" class="classname">ArrayAccess</a> support. It is now also possible to
+     store associative information with objects in
+     <a href="https://www.php.net/manual/en/class.splobjectstorage.php" class="classname">SplObjectStorage</a>.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     In the GD extension, there is now pixelation support available through
+     the <span class="function"><a href="https://www.php.net/manual/en/function.imagefilter.php" class="function">imagefilter()</a></span> function.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     <span class="function"><a href="https://www.php.net/manual/en/function.var-dump.php" class="function">var_dump()</a></span> output now includes private object properties.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     <span class="function"><a href="https://www.php.net/manual/en/function.session-start.php" class="function">session_start()</a></span> now returns <strong><code>false</code></strong> when session startup
+     fails.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     <span class="function"><a href="https://www.php.net/manual/en/function.property-exists.php" class="function">property_exists()</a></span> now checks the existence of a property
+     independent of accessibility (like <span class="function"><a href="https://www.php.net/manual/en/function.method-exists.php" class="function">method_exists()</a></span>).
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     <a href="https://www.php.net/manual/en/wrappers.php" class="link">Stream wrappers</a> can now be used by 
+     <a href="https://www.php.net/manual/en/ini.core.php#ini.include-path" class="link">include_path</a>.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     The <code class="parameter">initial</code> parameter for
+     <span class="function"><a href="https://www.php.net/manual/en/function.array-reduce.php" class="function">array_reduce()</a></span> can now be of any type.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     The <a href="https://www.php.net/manual/en/ref.dir.php" class="link">directory functions</a>
+     <span class="function"><a href="https://www.php.net/manual/en/function.opendir.php" class="function">opendir()</a></span>, <span class="function"><a href="https://www.php.net/manual/en/function.scandir.php" class="function">scandir()</a></span>, and
+     <span class="function"><a href="https://www.php.net/manual/en/function.dir.php" class="function">dir()</a></span> now use the default stream context if no explicit
+     context is passed.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     <span class="function"><a href="https://www.php.net/manual/en/function.crypt.php" class="function">crypt()</a></span> now has Blowfish and extended DES support, and 
+     <span class="function"><a href="https://www.php.net/manual/en/function.crypt.php" class="function">crypt()</a></span> features are now 100% portable. PHP has its own 
+     internal crypt implementation which drops into place when support for 
+     <code class="literal">crypt</code> or <code class="literal">crypt_r</code> is not found.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     <span class="function"><a href="https://www.php.net/manual/en/function.getopt.php" class="function">getopt()</a></span> now accepts "long options" on all platforms.
+     Optional values and <code class="literal">=</code> as a separator for short options
+     are now supported.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     <span class="function"><a href="https://www.php.net/manual/en/function.fopen.php" class="function">fopen()</a></span> has a new mode option (<code class="literal">n</code>),
+     which passes <strong><code>O_NONBLOCK</code></strong> to the underlying
+     <code class="literal">open()</code> system call. Note that this mode is not currently 
+     supported on Windows.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     <span class="function"><a href="https://www.php.net/manual/en/function.getimagesize.php" class="function">getimagesize()</a></span> now supports icon files (.ico).
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     The mhash extension have moved to PECL, but the 
+     <a href="https://www.php.net/manual/en/ref.hash.php" class="link">Hash</a> extension have been modified to support 
+     mhash if PHP is compiled with <code class="literal">--with-mhash</code>. Note that the 
+     Hash extension does not require the mhash library to be available whether or 
+     not the mhash emulation is enabled.
+    </span>
+   </li>
+  </ul></div>
+</main>
+    </body>
+</html>

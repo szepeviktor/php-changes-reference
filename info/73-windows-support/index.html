@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Windows Support</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="">
+        <meta name="title" content="Windows Support">
+        <meta name="description" content="">
+
+        <meta property="og:title" content="Windows Support">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:title" content="Windows Support">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+
+        <link rel="stylesheet" href="/php-changes-reference/info.css" type="text/css" media="screen">
+    </head>
+
+    <body>
+        
+<header class="main-header">
+    <h1>
+        Windows Support for PHP 7.3
+    </h1>
+</header>
+
+<main class="info-main">
+  <div id="migration73.windows-support" class="sect1">
+ <h2 class="title">Windows Support</h2>
+
+ <div class="sect2" id="migration73.windows-support.core">
+  <h3 class="title">PHP Core</h3>
+
+  <div class="sect3" id="migration73.windows-support.core.file-descriptors">
+   <h4 class="title">More POSIX Conforming File Deletion</h4>
+
+   <p class="para">
+    File descriptors are opened in shared read/write/delete mode by default.
+    This effectively maps the <abbr class="abbrev">POSIX</abbr> semantics and allows to
+    delete files with handles in use. It is not 100% same, some platform
+    differences still persist. After the deletion, the filename entry is
+    blocked, until all the opened handles to it are closed.
+   </p>
+  </div>
+
+ </div>
+
+</div>
+</main>
+    </body>
+</html>

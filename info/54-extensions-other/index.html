@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Other changes to extensions</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="">
+        <meta name="title" content="Other changes to extensions">
+        <meta name="description" content="">
+
+        <meta property="og:title" content="Other changes to extensions">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:title" content="Other changes to extensions">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+
+        <link rel="stylesheet" href="/php-changes-reference/info.css" type="text/css" media="screen">
+    </head>
+
+    <body>
+        
+<header class="main-header">
+    <h1>
+        Other changes to extensions for PHP 5.4
+    </h1>
+</header>
+
+<main class="info-main">
+  <div id="migration54.extensions-other" class="section">
+  <h2 class="title">Other changes to extensions</h2>
+  <p class="simpara">
+   Changes in extension behavior, and new features:
+  </p>
+  <ul class="itemizedlist"><li class="listitem">
+    <span class="simpara">
+     <a href="https://www.php.net/manual/en/book.mysqli.php" class="link">mysqli</a>
+     - <a href="https://www.php.net/manual/en/class.mysqli-result.php" class="classname">mysqli_result</a> now implements <a href="https://www.php.net/manual/en/class.traversable.php" class="link">Traversable</a>
+    </span>
+   </li>
+  </ul><ul class="itemizedlist"><li class="listitem">
+    <span class="simpara">
+     <a href="https://www.php.net/manual/en/ref.pdo-mysql.php" class="link">pdo_mysql</a>
+     - Removed support for linking with MySQL client libraries older than 4.1
+    </span>
+   </li>
+  </ul><ul class="itemizedlist"><li class="listitem">
+  <span class="simpara">
+   The MySQL extensions <a href="https://www.php.net/manual/en/book.mysql.php" class="link">mysql</a>,
+   <a href="https://www.php.net/manual/en/book.mysqli.php" class="link">mysqli</a> and <a href="https://www.php.net/manual/en/ref.pdo-mysql.php" class="link">PDO_mysql</a>
+   use <a href="https://www.php.net/manual/en/book.mysqlnd.php" class="link">mysqlnd</a> as the default library now. It is still possible to use
+   libmysqlclient by specifying a path to the configure options.
+    </span>
+  </li>
+  </ul><ul class="itemizedlist"><li class="listitem">
+    <span class="simpara">
+     <a href="https://www.php.net/manual/en/book.mysqlnd.php" class="link">mysqlnd</a>
+     - Added named pipes support
+    </span>
+   </li>
+  </ul></div>
+</main>
+    </body>
+</html>

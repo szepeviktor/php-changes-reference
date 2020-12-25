@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Changes to INI file handling</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="">
+        <meta name="title" content="Changes to INI file handling">
+        <meta name="description" content="">
+
+        <meta property="og:title" content="Changes to INI file handling">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:title" content="Changes to INI file handling">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+
+        <link rel="stylesheet" href="/php-changes-reference/info.css" type="text/css" media="screen">
+    </head>
+
+    <body>
+        
+<header class="main-header">
+    <h1>
+        Changes to INI file handling for PHP 5.5
+    </h1>
+</header>
+
+<main class="info-main">
+  <div id="migration55.ini" class="sect1">
+  <h2 class="title">Changes to INI file handling</h2>
+
+  <div class="sect2" id="migrations55.ini.intl">
+   <h3 class="title"><a href="https://www.php.net/manual/en/book.intl.php" class="link">Intl</a></h3>
+
+   <p class="para">
+    The <code class="literal">intl.use_exceptions</code> configuration directive has
+    been added, which controls the behaviour of intl when global errors occur
+    in conjunction with the already extant <code class="literal">intl.error_level</code>
+    configuration directive.
+   </p>
+  </div>
+
+  <div class="sect2" id="migration55.ini.mysqlnd">
+   <h3 class="title"><a href="https://www.php.net/manual/en/book.mysqlnd.php" class="link">MySQLnd</a></h3>
+
+   <p class="para">
+    The <a href="https://www.php.net/manual/en/mysqlnd.config.php#ini.mysqlnd.sha256-server-public-key" class="link">mysqlnd.sha256_server_public_key</a>
+    configuration directive has been added to allow
+    <a href="https://www.php.net/manual/en/book.mysqli.php" class="link">mysqli</a> to use the new MySQL
+    authentication protocol.
+   </p>
+  </div>
+ </div>
+</main>
+    </body>
+</html>

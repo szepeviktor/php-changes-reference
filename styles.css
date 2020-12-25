@@ -1,0 +1,105 @@
+@import "//fonts.googleapis.com/css?family=Droid+Sans:regular,bold";
+
+/* Variables */
+
+:root {
+    --black: #1B1B1B;
+}
+
+body {
+    background: var(--black);
+    font-family: 'Droid Sans', Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Main header */
+
+.main-header {
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--gray);
+    background: var(--black)
+}
+
+.main-header a {
+        color: inherit;
+        text-decoration: none
+    }
+
+.main-header a:hover {
+            text-decoration: underline;
+        }
+
+.main-header h1 {
+        font-size: .9rem;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        white-space: nowrap
+        
+    }
+
+.main-header h1 strong {
+            color: white;
+        }
+
+/* Main content */
+
+.main-content {
+    padding: 0;
+    display: grid;
+    grid-auto-columns: minmax(max-content, 1fr)
+}
+
+.main-content article {
+        grid-row: 1;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        padding-bottom: 1rem;
+        background: var(--color);
+        color: var(--black);
+    }
+
+.main-content h1 {
+        font-size: .9em;
+        margin: 0;
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+        background-color: #0002;
+    }
+
+.main-content a {
+        color: inherit
+    }
+
+.main-content a:hover {
+            background: var(--black);
+            color: var(--color);
+        }
+
+.main-content h2 {
+        font-size: 0.9rem;
+        line-height: 1em;
+        padding: .5rem 1rem;
+        margin: 1rem 0 0;
+    }
+
+.main-content ul {
+        font-size: 0.8rem;
+        line-height: 1em;
+        list-style: none;
+        margin: 0;
+        padding: 0
+    }
+
+.main-content ul li a {
+            text-decoration: none;
+            display: block;
+            padding: .25rem 1rem;
+        }
+
+@media (min-width: 750px) {
+        .main-content.ly-horizontal {
+            flex-wrap: nowrap;
+        }
+    }

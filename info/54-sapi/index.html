@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Changes in SAPI modules</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="">
+        <meta name="title" content="Changes in SAPI modules">
+        <meta name="description" content="">
+
+        <meta property="og:title" content="Changes in SAPI modules">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:title" content="Changes in SAPI modules">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+
+        <link rel="stylesheet" href="/php-changes-reference/info.css" type="text/css" media="screen">
+    </head>
+
+    <body>
+        
+<header class="main-header">
+    <h1>
+        Changes in SAPI modules for PHP 5.4
+    </h1>
+</header>
+
+<main class="info-main">
+  <div id="migration54.sapi" class="section">
+  <h2 class="title">Changes in SAPI modules</h2>
+  <ul class="itemizedlist"><li class="listitem">
+    <span class="simpara">
+     A new SAPI module named <code class="literal">cli-server</code> is now available.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     Added CLI option <code class="literal">--rz</code> which shows information of the named Zend extension.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     Added shortcut <code class="literal">#inisetting=value</code> to change <var class="filename">php.ini</var> settings at run-time in interactive readline CLI
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     Added apache compatible functions: <span class="function"><a href="https://www.php.net/manual/en/function.apache-child-terminate.php" class="function">apache_child_terminate()</a></span>,
+     <span class="function"><a href="https://www.php.net/manual/en/function.getallheaders.php" class="function">getallheaders()</a></span>, <span class="function"><a href="https://www.php.net/manual/en/function.apache-request-headers.php" class="function">apache_request_headers()</a></span>
+     and <span class="function"><a href="https://www.php.net/manual/en/function.apache-response-headers.php" class="function">apache_response_headers()</a></span> for FastCGI SAPI.
+    </span>
+   </li>
+   <li class="listitem">
+    <span class="simpara">
+     PHP-FPM: Added the <code class="literal">process.max</code> setting, to control the number
+     of processes that FPM can fork.
+    </span>
+   </li>
+  </ul></div>
+</main>
+    </body>
+</html>
